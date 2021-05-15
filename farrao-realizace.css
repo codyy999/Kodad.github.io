@@ -1,0 +1,100 @@
+@media screen and (max-width: 1400px) {
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    section {
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    section:nth-child(2n+1) .content {
+        padding: 0px 0 0px 0px;
+        text-align: center;
+    }
+
+
+    section:nth-child(2n+2) .content {
+        padding: 0px 0px 0px 0;
+        text-align: center;
+    }
+
+    main .content {
+        min-width: 15px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1050px){
+    section{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .imgBox{
+        display: flex;
+        justify-content: center;
+    }
+    .imgBox img{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .imgBox2{
+        display: flex;
+        justify-content: center;
+    }
+    .imgBox2 img{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .imgBox3{
+        display: flex;
+        justify-content: center;
+    }
+    .imgBox3 img{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .imgBox4{
+        display: flex;
+        justify-content: center;
+    }
+    .imgBox4 img{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .imgBox5{
+        display: flex;
+        justify-content: center;
+    }
+    .imgBox5 img{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    main section.content {
+        font-size: 5px;
+    }
+   
+}

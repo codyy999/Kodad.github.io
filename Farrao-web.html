@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="img-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   
+    <title>Farrao s.r.o</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -moz-user-select: none;
+            -user-select: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .text-slider{
+            background-image: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0, 0.8)), to(rgba(44, 42, 37, 0)));
+            color: white;
+            
+            margin-left: 10%;
+            
+  
+           
+            
+        }
+        .text-slider h2{
+            padding-top: 45px;
+            padding-left: 85px;
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .text-slider p{
+            opacity: .8;
+            padding-left: 85px;
+        }
+
+        .banner {
+
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-attachment: fixed;
+            animation: slider 16s linear infinite 0s;
+            animation-timing-function: ease-in-out;
+            background-image: url(https://wallpaperaccess.com/full/874774.jpg);
+        }
+        @keyframes slider{
+            0%{
+                background-image: url(https://farrao-int.cz/wp-content/uploads/2020/02/pricky-nahled-1920x590.jpg);
+                
+                
+            }
+            25%{
+                background-image: url(https://farrao-int.cz/wp-content/uploads/2020/01/AHR_0688-HDR-1920x590.jpg);
+            }
+            50%{
+                background-image: url(https://farrao-int.cz/wp-content/uploads/2020/01/IMAG0402-1920x590.jpg);
+            }
+            75%{
+                background-image: url(https://farrao-int.cz/wp-content/uploads/2020/01/CA-technologies-II-09-1920x590.jpg);
+            }
+            100%{
+                background-image: url(https://farrao-int.cz/wp-content/uploads/2020/02/pricky-nahled-1920x590.jpg);
+            }
+        }
+
+        .name2 h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            padding-top: 342px;
+            font-size: 200px;
+            
+            color: #4f617436;
+            background-image: url(water.png);
+            -webkit-text-stroke: 1px black;
+            -webkit-background-clip: text;
+            animation: water 35s linear infinite;
+        }
+
+
+
+        @keyframes water {
+            from {
+                background-position: left 0 top 410px;
+            }
+
+            to {
+                background-position: left 1000px top 410px;
+            }
+        }
+
+
+
+
+        nav {
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            right: 0;
+            top: 0;
+            padding: 0 5%;
+            height: 165px;
+            background: white;
+            border-bottom: 1px solid #e4c022;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav .logo {
+            float: left;
+            display: flex;
+            align-items: center;
+        }
+
+        nav p {
+            opacity: 0.8;
+            display: flex;
+            font-weight: 200;
+            flex-direction: column;
+            justify-content: center;
+
+            font-size: 20px;
+
+        }
+
+        nav .logo img {
+            max-width: 220px;
+
+        }
+
+        nav .links {
+            float: right;
+            padding: 0;
+            margin: 0;
+            width: 65%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav .links li {
+
+            list-style: none;
+        }
+
+        nav .links a {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2em;
+            font-size: 16px;
+            color: black;
+            text-decoration: none;
+        }
+
+        nav .links a span {
+            height: 40px;
+            width: 40px;
+            background: #e9c009;
+            color: rgb(0, 0, 0);
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 50px;
+            transition: 0.3s;
+        }
+
+        nav .links a:hover span {
+            background: black;
+            color: white;
+        }
+
+        #nav-toggle {
+            position: absolute;
+            top: -100px;
+        }
+
+        nav .icon-burger {
+            position: absolute;
+            display: none;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        nav .icon-burger .line {
+            width: 30px;
+            height: 5px;
+            background-color: rgb(0, 0, 0);
+            margin: 5px;
+            border-radius: 3px;
+            transition: all .3s ease-in-out;
+        }
+
+
+
+        footer {
+            color: rgb(255, 255, 255);
+            bottom: 0px;
+            width: 100%;
+            background: linear-gradient(#e9c009, #423e3f);
+        }
+
+        .main-content {
+            display: flex;
+        }
+
+        .main-content .box {
+            flex-basis: 50%;
+            padding: 10px 20px;
+        }
+
+        .box h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .box .content {
+            margin: 20px 0 0 0;
+            position: relative;
+        }
+
+        .box .content:before {
+            position: absolute;
+            content: '';
+            top: -10px;
+            height: 2px;
+            width: 100%;
+            background: #1a1a1a;
+        }
+
+        .box .content:after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 15%;
+            background: #ffd413;
+            top: -10px;
+        }
+
+        .left .content p {
+            text-align: justify;
+            font-weight: 200;
+        }
+
+        .left .content .social {
+            margin: 20px 0 0 200px;
+        }
+
+        .left .content .social a {
+            padding: 0 12px;
+        }
+
+        .left .content .social a span {
+            height: 40px;
+            width: 40px;
+            background: #1a1a1a;
+            color: white;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .left .content .social a span:hover {
+            background: #ffd413;
+        }
+
+        .center .content .fas {
+            font-size: 1.4375rem;
+            background: #1a1a1a;
+            height: 45px;
+            width: 45px;
+            line-height: 45px;
+            text-align: center;
+            border-radius: 50%;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .center .content .fas:hover {
+            background: #ffd413;
+        }
+
+        .center .content .text {
+            font-size: 1.0625rem;
+            font-weight: 100;
+            padding-left: 10px;
+        }
+
+        .center .content .phone {
+            margin: 15px 0;
+        }
+       
+        
+
+        @media screen and (max-width: 900px) {
+
+
+            footer {
+                position: relative;
+                bottom: 0px;
+            }
+
+            .main-content {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            .main-content .box {
+                margin: 5px 0;
+            }
+        }
+
+
+
+
+        @media screen and (max-width: 1200px) {
+            nav .logo {
+                float: none;
+                width: auto;
+                justify-content: center;
+            }
+
+            nav p {
+                display: none;
+
+            }
+
+            nav .links {
+                float: none;
+                position: fixed;
+                z-index: 9;
+                left: 0;
+                right: 0;
+                top: 150px;
+                bottom: 100%;
+                width: auto;
+                height: auto;
+                flex-direction: column;
+                justify-content: space-evenly;
+                background-color: rgba(0, 0, 0, .8);
+                overflow: hidden;
+                box-sizing: border-box;
+                transition: all .5s ease-in-out;
+            }
+
+            nav .links a {
+                font-size: 20px;
+                color: white;
+            }
+
+            nav :checked~.links {
+                bottom: 0;
+
+            }
+
+            nav .icon-burger {
+                color: black;
+                display: block;
+
+            }
+
+            nav :checked~.icon-burger .line:nth-child(1) {
+                transform: translateY(10px) rotate(225deg);
+            }
+
+            nav :checked~.icon-burger .line:nth-child(3) {
+                transform: translateY(-10px) rotate(-225deg);
+            }
+
+            nav :checked~.icon-burger .line:nth-child(2) {
+                opacity: 0;
+            }
+
+        }
+
+        @media screen and (max-width: 1400px) {
+            main {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+
+            .realizace {
+
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+
+            }
+
+            .realizace:nth-child(2n+1) .content {
+                padding: 0px 0 0px 0px;
+                text-align: center;
+            }
+
+
+            .realizace:nth-child(2n+2) .content {
+                padding: 0px 0px 0px 0;
+                text-align: center;
+            }
+
+            .content {
+
+                min-width: 15px;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+            }
+
+
+
+            .banner {
+
+                width: 100%;
+                height: 100vh;
+                background: url(https://wallpaperaccess.com/full/874774.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+
+            }
+
+            .name2 h2 {
+                font-size: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                padding-top: 342px;
+                color: #2c3e5036;
+                background-image: url(water.png);
+                -webkit-background-clip: text;
+                animation: water 35s infinite;
+            }
+
+
+        }
+
+        @media screen and (max-width: 800px) {
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background: url(https://wallpaperaccess.com/full/874774.jpg);
+                background-size: cover;
+                background-attachment: fixed;
+
+            }
+
+            .name2 h2 {
+                font-size: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                padding-top: 362px;
+                color: #2c3e5036;
+                background-image: url(water.png);
+                -webkit-background-clip: text;
+                animation: water 35s infinite;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <div class="logo"><a href="Farrao-rozcestnik.html"><img src="ne11t1uj.png" alt=""></a>
+
+            </div>
+            <p><strong>Interiérové systémy</strong>
+                FARRAO s.r.o.<br> Člen skupiny FARRAO Group a.s.</p>
+            <ul class="links">
+
+                <li><a href="Farrao-produkty.html">
+                        <span class="fas fa-th-large"></span>
+                        Produkty</a></li>
+                <li><a href="Farrao-realizace.html"> <span class="fas fa-photo-video"></span> Realizace</a></li>
+                <li><a href="Farrao-o_společnosti.html"><span class="fas fa-info"></span>O společnosti</a></li>
+                <li><a href="Farrao-kontakt.html"><span class="fas fa-phone"></span>Kontakt</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            
+            <div class="name2">
+                <h2>FARRAO</h2> 
+            </div>
+            
+        </div>
+        <div class="name">
+            <h2>REALIZACE</h2>
+        </div>
+        <section class="realizace">
+            <div class="reali">
+                <div class="imgBox"><img src="BOŘISLAVKA.png" alt=""></div>
+                <ul class="thumb">
+                    <li><a href="BOŘISLAVKA.png" target="imgBox"><img src="BOŘISLAVKA.png" width="150px" height="80px"
+                                alt=""></a></li>
+                    <li><a href="BOŘISLAVKA2.png" target="imgBox"><img src="BOŘISLAVKA2.png" width="150px" height="80px"
+                                height="80px" alt=""></a></li>
+                    <li><a href="BOŘISLAVKA3.png" target="imgBox"><img src="BOŘISLAVKA3.png" width="150px" height="80px"
+                                alt=""></a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h2>BOŘISLAVKA</h2>
+                <p>Evropská ul., Praha 6
+                    Tři objekty z komplexu - kompletní dodávka sádrokartonových konstrukcí interiéru. Stavba získala
+                    získala
+                    čtyři ocenění v mezinárodní architektonické soutěži European Property Awards.
+                    Zároveň projekt obdržel za Evropu tři nominace do celosvětové soutěže World’s Best.
+
+
+
+                </p>
+            </div>
+        </section>
+        <section class="realizace">
+            <div class="reali2">
+                <div class="imgBox2"><img src="Parkview1.png" alt=""></div>
+                <ul class="thumb2">
+                    <li><a href="Parkview1.png" target="imgBox"><img src="Parkview1.png" width="150px" height="80px"
+                                alt=""></a></li>
+                    <li><a href="Parkview2.png" target="imgBox"><img src="Parkview2.png" width="150px" height="80px"
+                                height="80px" alt=""></a></li>
+                    <li><a href="Parkview3.png" target="imgBox"><img src="Parkview3.png" width="150px" height="80px"
+                                alt=""></a></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h2>Parkview</h2>
+                <p>Dodávka sádrokartonových sádrokartonových příček a podhledů v interiérech + venkovní podhled
+                    fermacell
+                    Powerpanel H2O. Architektonický návrh budovy Parkview pochází z dílny slavného amerického architekta
+                    Richarda Meiera. Architektův rukopis se vyznačuje užitím bílé barvy a geometrickými tvary, které
+                    nezapřou vliv funkcionalismu. Meier za své dílo získal také Pritzkerovu cenu, nejprestižnější
+                    architektonické ocenění.
+
+
+
+                </p>
+            </div>
+        </section>
+        <section class="realizace">
+            <div class="reali3">
+                <div class="imgBox3"><img src="ARA1.jpg" alt=""></div>
+                <ul class="thumb3">
+                    <li><a href="ARA1.jpg" target="imgBox"><img src="ARA1.jpg" width="150px" height="80px" alt=""></a>
+                    </li>
+                    <li><a href="ARA2.png" target="imgBox"><img src="ARA2.png" width="150px" height="80px" height="80px"
+                                alt=""></a></li>
+                    <li><a href="ARA3.png" target="imgBox"><img src="ARA3.png" width="150px" height="80px" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h2>Palác ARA </h2>
+                <p>HubHub Palác ARA se svými 5 patry kanceláří, fix desků, flexi desků a eventového prostoru pro vaše
+                    workshopy a konference.
+
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="kontakt">
+        <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <h2>O společnosti</h2>
+                    <div class="content">
+                        <p>Společnost FARRAO s.r.o. je člen skupiny FARRAO Group a.s.. Od roku 1992 se
+                            zaměřuje svojí činností na dodávky a realizace specializovaných stavebních částí, především
+                            v oblasti stavebních interiérů administrativních a občanských veřejných budov. Portfolio
+                            společnosti zahrnuje i výhradní zastoupení několika zahraničních výrobců, jejichž výrobky
+                            dodává a instaluje na našem trhu.</p>
+
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <h2>Adresa a kontakt</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">Pod Lázní 720/13,Praha 4</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text">+420 261 221 741, 738</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text">info@farrao.cz</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </footer>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.thumb a').click(function (e) {
+                e.preventDefault();
+                $('.imgBox img').attr("src", $(this).attr("href"));
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.thumb2 a').click(function (e) {
+                e.preventDefault();
+                $('.imgBox2 img').attr("src", $(this).attr("href"));
+            })
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.thumb3 a').click(function (e) {
+                e.preventDefault();
+                $('.imgBox3 img').attr("src", $(this).attr("href"));
+            })
+        })
+    </script>
+    
+
+</body>
+
+</html>

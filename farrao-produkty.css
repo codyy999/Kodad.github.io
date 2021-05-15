@@ -1,0 +1,39 @@
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.name h2 {
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: #000000;
+    margin-bottom: -0px;
+}
+.text{
+    font-size: 20px;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.images{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+}
+.images a img{
+    width: 250px;
+    margin-left: 3px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,64 @@
+html{
+    scroll-behavior: smooth;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.name h2 {
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: -0px;
+}
+.text{
+    font-size: 18px;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 200;
+}
+.text:last-child{
+    text-align: left;
+}
+.text a{
+    color: black;
+}
+.text a:hover{
+    text-decoration: none;
+}
+.montage{
+    font-size: 20px;
+}
+.group{
+    font-size: 22px;
+}
+
+
+
+@media screen and (max-width: 570px) {
+    .name h2{
+        font-size: 40px;
+    }
+    .name h2:last-child{
+        font-size: 25px;
+    }
+    
+    .text{
+        font-size: 14px;
+    }
+    .montage{
+        font-size: 16px;
+    }
+    .group{
+        font-size: 18px;
+    }
+}

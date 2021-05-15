@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sec {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#f4dc03,#423e3f);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+.custom-shape-divider-bottom-1615717235 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1615717235 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1615717235 .shape-fill {
+    fill: #FFFFFF;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img{
+    max-width: 250px;
+}
+.content{
+    position: relative;
+    
+    z-index: 1;
+}
+.content h2{
+    color: rgb(0, 0, 0);
+    font-size: 4em;
+    line-height: 1em;
+    padding-bottom: 500px;
+}
+.content p{
+    color: rgb(0, 0, 0);
+    font-size: 0.4em;
+    line-height: 2em;
+    font-weight: 300;
+    top: 70px;
+}
+footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.suffix{
+    position: absolute;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+
+.builder{
+    position: absolute;
+    bottom: 0;
+    height: 90%;
+    right: 230px;
+    top: 50px;
+    
+}
+@media (max-width: 1880px) {
+    footer {
+        opacity: 0;
+    }
+}
+@media (min-width: 2000px) {
+    
+
+    .container {
+        padding-top: 90px;
+        
+        
+    }
+    
+    
+}
+
+@media (max-width: 1390px) {
+    .builder{
+        display: none;
+    }
+}
+@media (max-height: 900px) {
+    .content h2{
+        padding-top: 50px;
+    }
+    .content p {
+        padding-top: 10px;
+    }
+}
+@media (max-width: 1024px) {
+    header {
+        padding: 1px 2px;
+    }
+    .sec{
+        justify-content: center;
+        padding: 120px 40px 0;
+        flex-direction: column;
+    }
+    .content{
+        max-width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        
+    }
+    .content h2 {
+        font-size: 3.5em;
+        padding-top: 11px;
+    }
+    .content p {
+        font-size: 0.5em;
+        padding-top: 11px;
+    }
+    .builder {
+        opacity: 0;
+        position: relative;
+        bottom: 0;
+        height: 120%;
+        width: 30%;
+        right: initial;
+        margin-top: -120px;
+    }
+    .suffix{
+        position: absolute;
+        display: none;
+    }
+}
+@media (max-width: 991px) {
+    header {
+        padding: 1px 2px;
+    }
+    .sec{
+        justify-content: center;
+        padding: 120px 40px 0;
+        flex-direction: column;
+    }
+    .content h2 {
+        font-size: 3.5em;
+        padding-top: 11px;
+    }
+    .content{
+        
+        max-width: 100%;
+        margin-top: 20px;
+        text-align: center;
+        
+    }
+    
+    .builder {
+        opacity: 0;
+        position: relative;
+        bottom: 0;
+        height: 120%;
+        width: 30%;
+        right: initial;
+        margin-top: -120px;
+    }
+    .suffix{
+        position: absolute;
+        display: none;
+    }
+}
+@media (max-width: 510px) {
+    header .logo img{
+        max-width: 150px;
+        
+    }
+    .content p{
+        font-size: 40%;
+    }
+    .container{
+        padding-top: 50px;
+    }
+}
+@media (max-width: 410px){
+    .content h2 {
+       font-size: 385%;
+    }
+    .content p {
+        font-size: 30%;
+    }
+    .sec{
+        justify-content: center;
+        padding: 120px 40px 0;
+        flex-direction: column;
+    }
+}
+@media (max-width: 360px) {
+    .container{
+        padding-top: 100px;
+    }
+}
+@media (max-width: 345px) {
+    .content h2 {
+        font-size: 385%;
+        text-align: center;
+     }
+     .content p {
+        font-size: 30%;
+        
+    }
+     .sec{
+        justify-content: center;
+        padding: 120px 40px 0;
+        flex-direction: column;
+        
+    }
+    .custom-shape-divider-bottom-1615717235{
+        width: 100%;
+        opacity: 1;
+    }
+    .suffix{
+        position: absolute;
+        display: none;
+    }
+    .container{
+        padding-top: 100px;
+    }
+}
+
+
+
+ 

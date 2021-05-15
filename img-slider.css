@@ -1,0 +1,326 @@
+.imgBox2 {
+
+    width: 740px;
+
+    margin: 50px auto 20px;
+    margin-left: 155px;
+}
+
+.imgBox2 img {
+
+    display: flex;
+    height: 450px;
+    width: 100%;
+    border: 4px solid rgb(248, 208, 32);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .85);
+}
+
+ul.thumb2 {
+
+    margin: 0px auto;
+    margin-left: 145px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reali2 {
+    margin-right: 100px;
+}
+
+ul.thumb2 li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+ul.thumb2 li img {
+    border: 4px solid rgb(248, 208, 32);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .85);
+}
+
+
+
+.imgBox3 {
+
+    width: 740px;
+
+    margin: 50px auto 20px;
+    margin-left: 155px;
+}
+
+.imgBox3 img {
+
+    display: flex;
+    height: 450px;
+    width: 100%;
+    border: 4px solid rgb(248, 208, 32);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .85);
+}
+
+ul.thumb3 {
+
+    margin: 0px auto;
+    margin-left: 145px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reali3 {
+    margin-right: 100px;
+}
+
+ul.thumb3 li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+ul.thumb3 li img {
+    border: 4px solid rgb(248, 208, 32);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .85);
+}
+
+
+
+
+
+
+
+
+
+
+.imgBox4 {
+
+    width: 740px;
+
+    margin: 50px auto 20px;
+    margin-left: 155px;
+}
+
+.imgBox4 img {
+
+    display: flex;
+    height: 450px;
+    width: 100%;
+    border: 4px solid rgb(248, 208, 32);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .85);
+}
+
+ul.thumb4 {
+
+    margin: 0px auto;
+    margin-left: 145px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reali4 {
+    margin-right: 100px;
+}
+
+ul.thumb4 li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+ul.thumb4 li img {
+    border: 4px solid rgb(248, 208, 32);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .85);
+}
+
+
+
+
+
+
+
+
+.imgBox5 {
+
+    width: 740px;
+
+    margin: 50px auto 20px;
+    margin-left: 155px;
+}
+
+.imgBox5 img {
+
+    display: flex;
+    height: 450px;
+    width: 100%;
+    border: 4px solid rgb(248, 208, 32);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .85);
+}
+
+ul.thumb5 {
+
+    margin: 0px auto;
+    margin-left: 145px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reali5 {
+    margin-right: 100px;
+}
+
+ul.thumb5 li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+ul.thumb5 li img {
+    border: 4px solid rgb(248, 208, 32);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .85);
+}
+
+section:nth-child(2n+1) {
+
+    height: auto;
+    
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+section:nth-child(2n+2) {
+
+    height: auto;
+    
+    display: flex;
+
+}
+
+section .imgbx:first-child {
+    position: sticky;
+    top: 0;
+    min-width: 50%;
+    height: 100vh;
+
+}
+
+section .imgbx img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+}
+
+section:nth-child(2n+1) .content {
+    padding: 100px 0 100px 100px;
+    text-align: center;
+}
+
+
+section:nth-child(2n+2) .content {
+    padding: 100px 100px 100px 0;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin-left: 50px;
+}
+
+section .content h2 {
+    margin: 0 0 20px;
+    font-size: 30px;
+}
+
+section .content p {
+    color: #777;
+    font-size: 15px;
+}
+
+
+
+main {
+    padding-bottom: 55px;
+
+}
+
+.imgBox {
+
+    width: 740px;
+
+    margin: 50px auto 20px;
+    margin-left: 155px;
+}
+
+.imgBox img {
+
+    display: flex;
+    height: 450px;
+    width: 100%;
+    border: 4px solid rgb(248, 208, 32);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .85);
+}
+
+ul.thumb {
+
+    margin: 0px auto;
+    margin-left: 145px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reali {
+    margin-right: 100px;
+}
+
+ul.thumb li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+ul.thumb li img {
+    border: 4px solid rgb(248, 208, 32);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .85);
+}
+
+.content1 {
+    position: relative;
+    margin: 130px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.content1 .text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #e9c009;
+}
+
+.content1 .p {
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: #202020;
+}
+
+.name h2 {
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 80px;
+    color: #000000;
+
+}
+
+
+
+
+main{
+    background: rgba(255, 255, 255, .85) url(stažený\ soubor\ \(1\).jpg);
+    background-size: 800px;
+    background-blend-mode: lighten;
+  
+}
